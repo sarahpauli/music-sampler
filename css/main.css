@@ -7,16 +7,14 @@ html {
 }
 
 body {
-    background: #f0e5e5;
-    color: #292929;
+    background: #2c2c2c;
+    color: #f7f7f7;
     margin: 3rem;
 }
 
 img {
     max-width: 100%;
     padding: .5rem;
-    margin: auto;
-    display: block;
 }
 
 h1 {
@@ -25,30 +23,27 @@ h1 {
 }
 
 p {
-    margin: 2rem 4.5rem;
     font-family: 'Trebuchet MS', sans-serif;
-}
-
-article {
-    background: #dbcbcb;
+    width: 40%;
     margin: auto;
-    padding: .5rem 2rem;
-    width: 60%;
+    display: block;
+    padding: 1rem;
 }
 
 audio {
     margin: auto;
     padding: .25rem;
+    display: none;
 }
 
 /*Links*/
 
 a {
-    color: #692929;
+    color: #ff6a6a;
 }
 
 a:hover {
-    color: #ad4e4e;
+    color: #ffc0c0;
 }
 
 /*Specific Tags*/
@@ -57,8 +52,15 @@ a:hover {
     font-weight: bold;
 }
 
-audio {
-    display: none;
+#tylerjosh {
+    margin: auto;
+    display: block;
+}
+
+#contain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .cover {
@@ -67,22 +69,23 @@ audio {
 
 /*Media Queries*/
 
+@media screen and (max-width: 1300px){
+    #contain {
+        display: block;
+    }
+    img {
+        margin: auto;
+        display: block;
+    }
+}
+
 @media screen and (max-width: 800px){
     body {
         margin: 1rem;
     }
 
-    article {
+    p {
         padding: 1rem;
         width: 98%;
-    }
-
-    p {
-        margin: 1rem;
-    }
-
-    img {
-        margin: auto;
-        display: block;
     }
 }
