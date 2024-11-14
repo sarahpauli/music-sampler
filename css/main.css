@@ -24,9 +24,8 @@ h1 {
 
 p {
     font-family: 'Trebuchet MS', sans-serif;
-    width: 40%;
+    max-width: 28rem;
     margin: auto;
-    display: block;
     padding: 1rem;
 }
 
@@ -69,23 +68,17 @@ a:hover {
 
 /*Media Queries*/
 
-@media screen and (max-width: 1300px){
-    #contain {
-        display: block;
-    }
-    img {
-        margin: auto;
-        display: block;
-    }
-}
-
-@media screen and (max-width: 800px){
+@media screen and (max-width: 850px){
     body {
         margin: 1rem;
     }
+    
+    #contain {
+        display: block;
+    }
 
-    p {
-        padding: 1rem;
-        width: 98%;
+    img {
+        margin: auto;
+        display: block;
     }
 }
